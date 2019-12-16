@@ -173,6 +173,10 @@ function test (){
 
 
  var high_score = document.cookie;
+if(high_score != ""){
   high_score = high_score.split("=")[1];
-  
   $(".score").html("High Score : "+ high_score)
+}else{
+  $(".score").hide();
+}
+  
